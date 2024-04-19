@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Āmin</title>
+    <link rel="shortcut icon" href="images/logo1.jpg" type="image/x-icon">
+    <!--Main Css File-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Normalize ALL Elements-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Font Awesome Library-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- js file  -->
+    <script src="script.js" defer></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="main-nav">
+            <i class="fa-solid fa-bars navOpenBtn"></i>
+            <a href="#" class="logo">                    
+                <img  src="images/main-logo.svg" alt="#">
+            </a>
+            <ul class="nav-links">
+                <i class="fa-solid fa-xmark navCloseBtn"></i>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="weather">Weather</a></li>
+                <li><a href="volunteering.html">Volunteering</a></li>
+                <li><a href="instruction.html" >Instructions</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+        <i class="fa-solid fa-magnifying-glass search-icon" id="searchIcon"></i>
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search here..." />
+        </div>
+        <i class="fa-solid fa-user user-icon" id="form-open"></i>
+        </div>        
+    </nav>
+    <section class="login-container">
+        <div class="form-box">
+            <i class="fa-solid fa-xmark form-close"></i>
+            <!-- Login From -->
+            <div class="login-form">
+                <div class="header">
+                        <h2>Sign in</h2>
+                        <p>to your account using your email</p>       
+                </div> 
+                <div class="form">
+                    <form action="#" method="post" id="Signin-form">
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Email" id="email" required />
+                        </div>
+                        <div class="input-box">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" placeholder="Password" id="password">
+                        </div>
+                        <button type="submit" class="button">Login</button>
+                        <div >
+                            <a href="#" class="forgot-pw">Forgot password?</a>
+                        </div>
+                        <div class="login-signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+                    </form>
+            </div>
+        </div>
+            <!-- Signup From -->
+            <div class="signup-form">
+                <div class="header">
+                        <h2>Sign Up</h2>
+                        <p>to be Āmin</p>    
+                </div>
+                <div class="progress-bar">
+                    <div class="step">
+                        <div class="bullet">
+                        <span>1</span>
+                        </div>
+                        <div class="check fas fa-check"></div>
+                    </div>
+                    <div class="step">
+                        <div class="bullet">
+                        <span>2</span>
+                        </div>
+                        <div class="check fas fa-check"></div>
+                    </div>
+                    <div class="step">
+                        <div class="bullet">
+                        <span>3</span>
+                        </div>
+                        <div class="check fas fa-check"></div>
+                    </div>
+                    </div>
+                <div class="form form-outer" id="Signup-form">
+                <form action="#" method="post">
+                    <div class="page slide-page">
+                        <div class="input-box field half">
+                            <div class="half-box">
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                            </div>
+                            <div class="half-box">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" id="last-name" placeholder="last Name" required>
+                            </div>
+                        </div>
+                        <div class="input-box field">
+                            <label for="age">Age</label>
+                            <input type="number" name="age" placeholder="Age" id="age" required />
+                        </div>
+                        <div class="input-box field">
+                            <label for="email2">Email</label>
+                            <input type="email" name="email" placeholder="Email" id="email2" required />
+                        </div>
+                        <div class="field">
+                            <button  class="firstNext next button ">Next</button>
+                        </div>
+                        <div class="login-signup">Already have an account? <a href="#" id="login">Login</a></div>
+                    </div>
+
+                    <div class="page">
+                        <div class="input-box field">
+                            <label for="password2">Password</label>
+                            <input type="password" name="password" placeholder="Password" id="password2">
+                        </div>
+                        <div class="input-box field">
+                            <label for="confirm_password">Password</label>
+                            <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+                        </div>
+                        <div class="input-box field half">
+                            <div class="half-box">
+                                <label for="blood-type">Blood Type</label>
+                                <input type="text" name="blood-type" id="blood-type" placeholder="Blood Type" >
+                            </div>
+                            <div class="half-box">
+                                <label for="country">Country</label>
+                                <input type="text" name="country" id="country" placeholder="Country" required>
+                            </div>
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-1 prev button">Previous</button>
+                            <button class="next-1 next button">Next</button>
+                        </div>
+                        <div>
+                            <a href="#" class="forgot_pw">Forgot password?</a>
+                        </div>
+                    </div>
+
+                    <div class="page">
+                        <div class="field input-box">
+                            <label for="address">Detailed address</label>
+                            <input type="text" name="address" id="address" placeholder="Detailed address" required>
+                        </div>
+                        <div class="field input-box">
+                            <label for="number">Phone number</label>
+                            <input type="Number" id="number" name="number" placeholder="+00 000 000 000">
+                        </div>
+                        <div class="last-chek field">
+                            <input type="radio" name="last-chek" id="last-chek">
+                            <label for="last-chek">If you sure about registering , complete it.</label>
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-2 prev button">Previous</button>
+                            <button type="submit" class="Sign-Up button">Sign Up</button>
+                        </div>
+                    </div>
+                
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+</body>

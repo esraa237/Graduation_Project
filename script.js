@@ -24,6 +24,9 @@ const nav = document.querySelector(".nav"),
   progressCheck = document.querySelectorAll(".step .check"),
   bullet = document.querySelectorAll(".step .bullet");
   let current = 1;
+  //variables for profile page
+  let profileImg=document.querySelector(".account-details .image-div img"),
+  userFile=document.querySelector(".account-details .userfile");
 
   //funstions for nav bar
   searchIcon.addEventListener("click", () => {
@@ -108,3 +111,7 @@ prevBtnThird.addEventListener("click", function(event){
   progressCheck[current - 2].classList.remove("active1");
   current -= 1;
 });
+//Profile picture
+userFile.onchange=function(){
+  profileImg.src=URL.createObjectURL(userFile.files[0]);
+}

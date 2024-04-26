@@ -11,7 +11,7 @@ const nav = document.querySelector(".nav"),
   //variables for profile page
   let profileImg=document.querySelector(".account-details .image-div img"),
   userFile=document.querySelector(".account-details .userfile");
-  let token = 0;//token=1 if submitting or login
+  let token = 1;//token=1 if submitting or login
   let userIconClick = 0;
   
   //functions for nav bar

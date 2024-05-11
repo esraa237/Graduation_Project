@@ -10,11 +10,11 @@
     margin: 0;
     border: none;
     border-radius: 8px;
-    background-image:url(../images/button-1.png) ;
-    background-size: cover;
-    /* background: linear-gradient(to right, #057a7a 50%, var(--blue-color) 50%);
+    /* background-image:url(../images/button-1.png) ;
+    background-size: cover; */
+    background: linear-gradient(to right, #057a7a 50%, var(--blue-color) 50%);
     background-size: 200% 100%;
-    background-position: right bottom; */
+    background-position: right bottom;
     color: var(--white-color);
     font-size: 1.5em;
     transition: all .2s ease-out;
@@ -34,11 +34,11 @@
     margin: 0;
     border: none;
     border-radius: 8px;
-    background-image:url(../images/button-2.png) ;
-    background-size: cover;
-    /* background: linear-gradient(to right, #bb1d25 50%, var(--emergency-red) 50%);
+    /* background-image:url(../images/button-2.png) ;
+    background-size: cover; */
+    background: linear-gradient(to right, #bb1d25 50%, var(--emergency-red) 50%);
     background-size: 200% 100%;
-    background-position: right bottom; */
+    background-position: right bottom;
     color: var(--white-color);
     font-size: 1.5em;
     transition: all .2s ease-out;
@@ -152,4 +152,5 @@ ol li{
 /* Footer */
 .footer .primary-paragraph p{
     text-align: left;
+    font-size: 20px;
 }

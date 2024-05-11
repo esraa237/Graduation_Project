@@ -55,6 +55,10 @@
     -ms-border-radius: 12px !important;
     -o-border-radius: 12px !important;
 }
+.volunteering .btn:hover{
+    box-shadow:0 0 5px #0bd6d6f8;
+}
+
 .volunteering .number-container .text{
 border-right: 2px solid #088b8b;
 color: #088b8b;

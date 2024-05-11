@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!--Font Awesome Library-->
     <link rel="stylesheet" href="css/all.min.css">
-    <!-- js file  -->
-    <script src="js/signup.js" defer></script>
+    <!-- js file  -->    
+    <script src="js/signup.js" defer></script>       
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,8 @@
             <li><a href="profile.html">Edit Profile</a></li>
             <li><a href="" id="signout">Sign Out</a></li>
             </ul>
-        </div>        </div>
+        </div>        
+    </div>
     </nav>
     <section class="signup-container">
         <div class="form-box">
@@ -67,19 +68,19 @@
                         <div class="bullet">
                         <span>1</span>
                         </div>
-                        <div class="check fas fa-check"></div>
+                        <div class="check">1</div>
                     </div>
                     <div class="step">
                         <div class="bullet">
                         <span>2</span>
                         </div>
-                        <div class="check fas fa-check"></div>
+                        <div class="check">2</div>
                     </div>
                     <div class="step">
                         <div class="bullet">
                         <span>3</span>
                         </div>
-                        <div class="check fas fa-check"></div>
+                        <div class="check">3</div>
                     </div>
                     </div>
                 <div class="form form-outer" id="Signup-form">
@@ -100,24 +101,35 @@
                             <input type="number" name="age" placeholder="Age" id="age" required />
                         </div>
                         <div class="input-box field">
-                            <label for="email2">Email</label>
-                            <input type="email" name="email" placeholder="Email" id="email2" required />
+                            <label for="id-num">ID Number</label>
+                            <input type="number" name="id-num" placeholder="Id Number" id="id-num" required />
                         </div>
                         <div class="field">
                             <button  class="firstNext next button ">Next</button>
                         </div>
-                        <div class="login-signup">Already have an account? <a href="login.html" id="login">Login</a></div>
+                        <div class="login-signup">Or Login with <a href="login.html" id="login">Email</a></div>
                     </div>
 
                     <div class="page">
                         <div class="input-box field">
-                            <label for="password2">Password</label>
-                            <input type="password" name="password" placeholder="Password" id="password2">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Email" id="email" required />
+                        </div>
+                        <div class="input-box field">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" placeholder="Password" id="password">
                         </div>
                         <div class="input-box field">
                             <label for="confirm_password">Confirm Password</label>
                             <input type="password" placeholder="Confirm Password" id="confirm_password" required>
                         </div>
+                        <div class="field btns">
+                            <button class="prev-1 prev button">Previous</button>
+                            <button class="next-1 next button">Next</button>
+                        </div>
+                        <div class="login-signup">Or Login with <a href="login.html" id="login">Email</a></div>
+                    </div>
+                    <div class="page">
                         <div class="input-box field half">
                             <div class="half-box">
                                 <label for="blood-type">Blood Type</label>
@@ -128,16 +140,6 @@
                                 <input type="text" name="country" id="country" placeholder="Country" required>
                             </div>
                         </div>
-                        <div class="field btns">
-                            <button class="prev-1 prev button">Previous</button>
-                            <button class="next-1 next button">Next</button>
-                        </div>
-                        <div>
-                            <a href="#" class="forgot_pw">Forgot password?</a>
-                        </div>
-                    </div>
-
-                    <div class="page">
                         <div class="field input-box">
                             <label for="address">Detailed address</label>
                             <input type="text" name="address" id="address" placeholder="Detailed address" required>
@@ -146,10 +148,11 @@
                             <label for="number">Phone number</label>
                             <input type="Number" id="number" name="number" placeholder="+00 000 000 000">
                         </div>
-                        <div class="last-chek field">
-                            <input type="radio" name="last-chek" id="last-chek">
-                            <label for="last-chek">If you sure about registering , complete it.</label>
-                        </div>
+                        <label class="last-chek field">
+                            <input type="checkbox" name="last-chek" id="last-chek">
+                            <span class="radio-check"></span>
+                            If you sure about registering, complete it.
+                        </label>
                         <div class="field btns">
                             <button class="prev-2 prev button">Previous</button>
                             <button type="submit" class="Sign-Up button">Sign Up</button>

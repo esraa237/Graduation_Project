@@ -56,23 +56,24 @@
     </nav>
     <section class="login-container reset-container">
         <div class="form-box">
+            <a href="login.html"><i class="fa-solid fa-arrow-left back-arrow"></i></a>
+            <i class="fa-solid fa-xmark form-close login-close"></i>
             <!-- Reset Password From -->
             <div class="login-form">
                 <div class="header">
-                <h2>Forget Your Password ?</h2>
-                <p>Your password will be reset by email</p>
+                <h2>Reset Password</h2>
+                <p>Enter your email to change your password</p>
                 </div> 
                 <div class="form">
                     <form action="{{ route('password.email') }}" method="post" >
                         <div class="input-box">
-                            <label for="email">Enter your email</label>
+                            <label for="email">Enter Your Email</label>
                             <input type="email" name="email" placeholder="Email" id="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
                         </div>
-                        <a href="reset1.html"><button type="submit"  class="button">
+                        <a href="reset1.html"><button type="button"  class="button">
                             Send Link
                         </button>
                         </a>
-                        <a href="login.html" class="reset-back">Back to login</a>
                     </form>
                 </div>
             </div>

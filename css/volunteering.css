@@ -1,6 +1,7 @@
 /*start Volunteering*/
 .volunteering{
     margin-top: 130px ;
+    padding: 40px 100px 10px;
     background-image: url('../images/volunteering-page.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,17 +60,25 @@
 .volunteering .btn:hover{
     box-shadow:0 0 5px #0bd6d6f8;
 }
-
+.volunteering .container{
+    display: flex;
+    align-items: center;
+    padding:0 0 20px;
+}
 .volunteering .number-container .text{
+    font-size: 20px;
 border-right: 2px solid #088b8b;
 color: #088b8b;
 }
 
 .volunteering .number-container .number{
+    font-size: 20px;
 color: #088b8b;
 }
 
 .volunteering .form-group select{
+    border: 1px solid #088b8b6f;
+    padding:12px 10px;
     color:#088b8bf1;
     background-color: transparent;
     font-size: 18px;

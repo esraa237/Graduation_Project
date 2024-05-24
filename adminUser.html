@@ -6,19 +6,21 @@
     <title>Āmin</title>
     <link rel="shortcut icon" href="images/logo1.jpg" type="image/x-icon">
     <!--Main Css File-->
+    <link rel="stylesheet" href="css/adminUser.css">
     <link rel="stylesheet" href="css/style.css">
     <!--Normalize ALL Elements-->
     <link rel="stylesheet" href="css/normalize.css">
     <!--Font Awesome Library-->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- js file  -->
+    <script src="js/adminUser.js" defer></script>
     <script src="js/script.js" defer></script>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="adminUser">
     <nav class="nav">
         <div class="main-nav">
             <i class="fa-solid fa-bars navOpenBtn"></i>
@@ -54,4 +56,180 @@
         </div>
         </div>        
     </nav>
+    <div class="tablesContainer">
+        <div class="buttons">
+            <div class="buttonContainer">
+                <button  onclick="showPanel(0)">All Users</button>
+                <button onclick="showPanel(1)">Safe</button>
+                <button onclick="showPanel(2)">Emergency</button>
+                <button onclick="showPanel(3)">Volunteer</button>
+            </div>
+            <button type="button">Reset Data</button>
+        </div>
+        <div class="tabPanel">
+                <div class="table-container AllUser-table">
+                <table>
+                    <thead class="table-header">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Country</th>
+                            <th>Phone N.</th>
+                            <th>ID N.</th>
+                            <th>B.T.</th>
+                            <th>State</th>
+                            <th>Age</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="tb-img">
+                                    <img src="/images/user.png" alt="">
+                                    </div>
+                                </td><!--image-->
+                                <td>kgjksj</td><!--name-->
+                                <td>fdsjllkj</td><!--country-->
+                                <td>9217417983</td><!--phone-->
+                                <td>21313244</td><!--id number-->
+                                <td>A</td><!--blood type-->
+                                <td>null</td><!--state-->
+                                <td>24</td><!--age-->
+                                <td>rewfgaaww</td><!--email-->
+                                <td>rewfgaawgwrew</td><!--address-->
+                                <td><button class="delete-btn">Delete</button></td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tabPanel">
+            <div class="table-container safe-table">
+                <table>
+                    <thead class="table-header">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Country</th>
+                            <th>Phone N.</th>
+                            <th>ID N.</th>
+                            <th>B.T.</th>
+                            <th>State</th>
+                            <th>Age</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="tb-img">
+                                <img src="/images/user.png" alt="">
+                                </div>
+                            </td><!--image-->
+                            <td>kgjksj</td><!--name-->
+                            <td>fdsjllkj</td><!--country-->
+                            <td>9217417983</td><!--phone-->
+                            <td>21313244</td><!--id number-->
+                            <td>A</td><!--blood type-->
+                            <td>null</td><!--state-->
+                            <td>24</td><!--age-->
+                            <td>rewfgaaww</td><!--email-->
+                            <td>rewfgaawgwrew</td><!--address-->
+                            <td><button class="delete-btn">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tabPanel">
+            <div class="table-container emergency-table">
+                <table>
+                    <thead class="table-header">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Country</th>
+                            <th>Phone N.</th>
+                            <th>ID N.</th>
+                            <th>B.T.</th>
+                            <th>State</th>
+                            <th>Age</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="tb-img">
+                                <img src="/images/user.png" alt="">
+                                </div>
+                            </td><!--image-->
+                            <td>kgjksj</td><!--name-->
+                            <td>fdsjllkj</td><!--country-->
+                            <td>9217417983</td><!--phone-->
+                            <td>21313244</td><!--id number-->
+                            <td>A</td><!--blood type-->
+                            <td>null</td><!--state-->
+                            <td>24</td><!--age-->
+                            <td>rewfgaaww</td><!--email-->
+                            <td>rewfgaawgwrew</td><!--address-->
+                            <td><button class="delete-btn">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tabPanel">
+            <div class="table-container volunteer-table">
+                <table>
+                    <thead class="table-header">
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Available Phone N.</th>
+                            <th>Volunteer Type</th>
+                            <th>Skills</th>
+                            <th>Availability</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>kgjksj</td><!--name-->
+                            <td>rewfgaaww</td><!--email-->
+                            <td>9217417983</td><!--phone-->
+                            <td>personal</td><!--Volunteer Type-->
+                            <td>skills</td><!--Skills-->
+                            <td>full time</td><!--Availability-->
+                            <td><button class="delete-btn">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="send-alarm-div">
+            <button class="send-alarm">Send Alarm</button>
+        </div>
+        <footer>
+            <div>
+            <p>Emergency number</p> 
+            <span>19999</span>
+            </div>
+        </footer>
+    </div>
 </body>

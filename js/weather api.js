@@ -78,9 +78,9 @@ function drawWeather(json){
     // Populate the middle grid with their respective icons
     
     for (let index = 25; index <= 36; index++) {
-        document.getElementById(`${index}`).src = `images/weather-icons/${json.list[(index-24)*3].weather[0].description}.svg`
+        document.getElementById(`${index}`).src = `../images/weather-icons/${json.list[(index-24)*3].weather[0].description}.svg`
         document.getElementById(`${index}`).alt = `${json.list[(index-24)*3].weather[0].description}.png`
     }
-    document.getElementById('weather-icon').src = `images/weather-icons/${json.list[0].weather[0].description}.svg`
+    document.getElementById('weather-icon').src = `../images/weather-icons/${json.list[0].weather[0].description}.svg`
     document.getElementById('weather-icon').alt = `${json.list[0].weather[0].description}.png`
 }

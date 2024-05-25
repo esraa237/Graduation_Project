@@ -369,7 +369,7 @@ a {
   font-weight: 600;
 }
 .account-details form{
-  padding:0 170px;
+  padding:0 150px;
 }
 @media(max-width:767px){
   .account-details form{
@@ -491,9 +491,9 @@ a {
   flex: 1;
 }
 .account-details footer{
-  padding:20px 200px;
-  font-size: 18px;
-  font-weight: 400;
+  padding:20px 200px 25px;
+  font-size: 20px;
+  font-weight: 500;
   display: flex;
 }
 .account-details footer p{
@@ -525,16 +525,11 @@ a {
   margin: 0 auto;
 }
 .instruction .number-container{
-  
+  align-items: center;
+  padding-bottom: 30px;
+  padding-left:50px;
 }
-
 .instruction .number-container .text{
-  font-size: 20px;
-  border-right: 2px solid #088b8b;
-  color: #088b8b;
-}
-
-.instruction .number-container .number{
   font-size: 20px;
   color: #088b8b;
 }

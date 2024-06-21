@@ -533,5 +533,10 @@ a {
   font-size: 20px;
   color: #088b8b;
 }
-
+.instruction .instructions-list ol:not(:last-of-type){
+  margin:10px 70px 20px 0;
+}
+.instruction .instructions-list ol:last-of-type{
+  margin:10px 70px 0 0;
+}
 /* end instruction */

@@ -1,0 +1,92 @@
+
+.model-testing{
+    margin-top: 100px;
+      background-image: url('../images/model-testing.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .model-testing input::placeholder{
+    color: #088b8b82 !important;
+  }
+  
+  .model-testing input{
+    border: 2px solid #088b8b6f !important;
+  }
+  
+  .model-testing input:focus{
+    box-shadow: none !important;
+    border: 2px solid #088b8b !important;
+  }
+  
+  .model-testing input{
+    background-color: transparent !important;
+  }
+  
+  .model-testing .w-45{
+    width: 48% !important;
+  }
+  
+  .model-testing .w-24{
+    width: 23% !important;
+  }
+  
+  .model-testing .windstorm input ,
+  .model-testing .flood input{
+    background-color: #088b8b1a !important;
+  }
+  
+  .model-testing .windstorm button,
+  .model-testing .flood button{
+    background-image: url("../images/test.jpg") !important;
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    color: #088b8b;
+  }
+  
+  .model-testing .text-custom-color{
+    color: #088b8b !important;
+  }
+#modelFooter{
+      background-image: url('../images/instractions-page.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  #modelFooter .number-container .text{
+    font-size: 20px;
+    border-right: 2px solid #088b8b;
+    color: #088b8b;
+}
+
+#modelFooter .number-container .number{
+    font-size: 20px;
+    color: #088b8b;
+}  
+.popup-flood,
+.popup-windstorm{
+    position: fixed;
+    inset: 0;
+    background-color: #00000074;
+    z-index: 999;
+}
+  
+.popup-flood .child,
+.popup-windstorm .child{
+    min-width: 30% !important;
+  }
+  
+ .text-box{
+    background-color: #088b8b47;
+    border: 2px solid #088b8b;
+  }
+  
+ .fa-xmark-circle{
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    cursor: pointer;
+  }
+

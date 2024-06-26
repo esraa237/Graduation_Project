@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/admin_pro.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- js file  -->
-    <script src="js/adminpro.js" defer></script>
     <script src="js/script.js" defer></script>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,76 +61,79 @@
         </div>        
     </nav>
     <main class="model-testing">
-        <div class="container py-5">
-            <div class="head p-5">
-                <h1 class="text-white fw-bold text-center">Model Testing</h1>
+        <div style="padding-bottom: 2.5rem !important;" class="container py-4">
+            <div style="padding-top: 20px; " class="head">
+                <h1 class="text-white-bone text-big fw-bold text-center">Model Testing</h1>
             </div>
             <div class="forms row justify-content-between">
-                <div class="windstorm col-md-5  ">
-                    <div class="inner bg-white p-3 rounded-4">
-                        <div class="text-center fw-bold p-3">
-                            <h2 class="text-custom-color fw-bold">Windstorm</h2>
-                        </div>
+                <div class="windstorm  col-md-5 ">
+                    <h2 class="text-white-bone text-meduim fw-semi text-center p-3 mb-3">Windstorm</h2>
+                    <div class="inner bg-white-bone custom-p-3 rounded-4 mb-3">
+                        <div class="text-center fw-bold mb-3"></div>
                         <form action="">
                             <div class="form-group mb-3 d-flex justify-content-between ">
-                                <input class="form-control w-45" type="text" placeholder="Temperature" name="temperature" id="temperature">
-                                <input class="form-control w-45" type="text" placeholder="Relative Humidity" name="relativeHumidity"
+                                <input class="form-control text-custom-color w-45" type="text" placeholder="Temperature" name="temperature" id="temperature">
+                                <input class="form-control text-custom-color w-45" type="text" placeholder="Relative Humidity" name="relativeHumidity"
                                     id="relativeHumidity">
                             </div>
                             <div class="form-group mb-3 d-flex justify-content-between ">
-                                <input class="form-control w-45" type="text" placeholder="Pressure" name="pressure" id="pressure">
-                                <input class="form-control w-45" type="text" placeholder="Wind Direction" name="windDirection"
+                                <input class="form-control text-custom-color w-45" type="text" placeholder="Pressure" name="pressure" id="pressure">
+                                <input class="form-control text-custom-color w-45" type="text" placeholder="Wind Direction" name="windDirection"
                                     id="windDirection">
                             </div>
                             <div class="form-group mb-3 d-flex justify-content-between ">
-                                <input class="form-control w-45" type="text" placeholder="Precipitattion" name="precipitattion" id="precipitattion">
-                                <input class="form-control w-45" type="text" placeholder="Windgustspeed" name="windgustspeed"
+                                <input class="form-control text-custom-color w-45" type="text" placeholder="Precipitattion" name="precipitattion" id="precipitattion">
+                                <input class="form-control text-custom-color w-45" type="text" placeholder="Windgustspeed" name="windgustspeed"
                                     id="windgustspeed">
                             </div>
                         </form>
                     </div>
                     <div class="py-4 text-center">
-                        <button id="btn-windstorm" class="px-4 py-2 border-0 rounded-1">Test</button>
+                        <a href="windstorm_pred.html">
+                            <button id="btn-windstorm" class="px-4 py-2 fs-4 border-0 rounded-1">Test</button>
+                        </a>
                     </div>
                 </div>
                 <div class="flood col-md-5  ">
-                    <div class="inner bg-white p-3 rounded-4">
-                        <div class="text-center fw-bold p-3">
-                            <h2 class="text-custom-color fw-bold">Flood</h2>
+                    <h2 class="text-white-bone text-meduim fw-semi p-3 mb-3 text-center custom">Flood</h2>
+                    <div class="inner bg-white-bone custom-p-3 rounded-4 mb-3">
+                        <div class="text-center fw-bold mb-3">
                         </div>
                         <form action="">
                             <div class="form-group mb-3 d-flex  justify-content-between ">
-                                <input class="form-control w-24" type="text" name="jan" id="jan" placeholder="JAN">
-                                <input class="form-control w-24" type="text" name="APR" id="APR" placeholder="APR">
-                                <input class="form-control w-24" type="text" name="JUL" id="JUL" placeholder="JUL">
-                                <input class="form-control w-24" type="text" name="OCT" id="OCT" placeholder="OCT">
+                                <input class="form-control text-custom-color w-24" type="text" name="jan" id="jan" placeholder="JAN">
+                                <input class="form-control text-custom-color w-24" type="text" name="APR" id="APR" placeholder="APR">
+                                <input class="form-control text-custom-color w-24" type="text" name="JUL" id="JUL" placeholder="JUL">
+                                <input class="form-control text-custom-color w-24" type="text" name="OCT" id="OCT" placeholder="OCT">
                             </div>
                             <div class="form-group mb-3 d-flex  justify-content-between ">
-                                <input class="form-control w-24" type="text" name="FEB" id="FEB" placeholder="FEB">
-                                <input class="form-control w-24" type="text" name="MAY" id="MAY" placeholder="MAY">
-                                <input class="form-control w-24" type="text" name="AUG" id="AUG" placeholder="AUG">
-                                <input class="form-control w-24" type="text" name="NOV" id="NOV" placeholder="NOV">
+                                <input class="form-control text-custom-color w-24" type="text" name="FEB" id="FEB" placeholder="FEB">
+                                <input class="form-control text-custom-color w-24" type="text" name="MAY" id="MAY" placeholder="MAY">
+                                <input class="form-control text-custom-color w-24" type="text" name="AUG" id="AUG" placeholder="AUG">
+                                <input class="form-control text-custom-color w-24" type="text" name="NOV" id="NOV" placeholder="NOV">
                             </div>
                             <div class="form-group mb-3 d-flex  justify-content-between ">
-                                <input class="form-control w-24" type="text" name="MAR" id="MAR" placeholder="MAR">
-                                <input class="form-control w-24" type="text" name="JUN" id="JUN" placeholder="JUN">
-                                <input class="form-control w-24" type="text" name="SEP" id="SEP" placeholder="SEP">
-                                <input class="form-control w-24" type="text" name="DEC" id="DEC" placeholder="DEC">
+                                <input class="form-control text-custom-color w-24" type="text" name="MAR" id="MAR" placeholder="MAR">
+                                <input class="form-control text-custom-color w-24" type="text" name="JUN" id="JUN" placeholder="JUN">
+                                <input class="form-control text-custom-color w-24" type="text" name="SEP" id="SEP" placeholder="SEP">
+                                <input class="form-control text-custom-color w-24" type="text" name="DEC" id="DEC" placeholder="DEC">
                             </div>
                         </form>
                     </div>
                     <div class="py-4 text-center">
-                        <button id="btn-flood" class="px-4 py-2 border-0 rounded-1">Test</button>
+                        <a href="flood_pred.html">
+                            <button id="btn-flood" class="px-4 py-2 fs-4  border-0 rounded-1">Test</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer id="modelFooter" class="py-4">
+    <footer id="modelFooter" class="py-2">
         <div class="container">
-            <div class="number-container d-flex ms-5 p-3">
-                <div class="text px-4 fw-bold">
-                    <p class="m-0">Emergency number</p>
+            <div class="number-container d-flex p-3">
+                <div class="text px-3 ">
+                    <p class="m-0 fw-medium">Emergency number</p>
                 </div>
                 <div class="number px-2">
                     <p class="m-0 fw-medium">19999</p>
@@ -139,27 +141,5 @@
             </div>
         </div>
     </footer>
-    <div id="popup-flood" class="popup-flood d-none">
-        <div class="container d-flex justify-content-center align-items-center h-100">
-            <div class="child bg-white position-relative  p-3 rounded-3">
-                <i id="floodExit" class="fa fa-xmark-circle text-danger fs-5"></i>
-                <h3 class="mb-3" >Prediction</h3>
-                <div class="text-box p-2 text-center rounded-3  mx-auto">
-                    <p class="m-0 text-custom-color fw-bolder">There will be a flood</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="popup-windstorm" class="popup-windstorm d-none">
-        <div class="container d-flex justify-content-center align-items-center h-100">
-            <div class="child bg-white position-relative  p-3 rounded-3">
-                <i id="windstormExit" class="fa fa-xmark-circle text-danger fs-5"></i>
-                <h3 class="mb-3" >Prediction</h3>
-                <div class="text-box p-2 text-center rounded-3  mx-auto">
-                    <p class="m-0 text-custom-color fw-bolder">There will be windstorm</p>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>

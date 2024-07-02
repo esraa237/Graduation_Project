@@ -42,12 +42,15 @@
     background: #066966;
   }
   /* End Global Rules */
-
+.adminUser .nav{
+  box-shadow: 0 0 10px #067777;
+}
   .adminUser .tablesContainer{
     margin-top: 130px ;
     max-height:400px;
     padding:0 100px;
 }
+
 .adminUser .tablesContainer .buttons{
   display: flex;
   justify-content: space-between;
@@ -78,7 +81,7 @@
   border-bottom: 2px solid var(--white-bone-color);
   font-weight: 600;
 }
-.tablesContainer .buttons>button{
+.tablesContainer .reset-btn{
     width:fit-content;
     background-image: url(../images/reset@4x.png);
     background-position: center;
@@ -98,8 +101,8 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-.tablesContainer .buttons>button:hover{
-  box-shadow:0 0 5px #f5f2ead2;
+.tablesContainer .reset-btn:hover{
+  box-shadow:0 0 15px #066966;
   font-weight: 700;
 }
 
@@ -213,11 +216,11 @@
     -o-transform: translate(-50%,-50%);
 }
 .tablesContainer .send-alarm:hover{
-  box-shadow:0 0 5px #f5f2ead2;
+  box-shadow:0 0 15px #066966;
   font-weight: 700;
 }
 .adminUser footer{
-  position: absolute;
+  position: fixed;
   left:0;
   bottom:0;
   display: flex;

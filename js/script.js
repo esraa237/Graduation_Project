@@ -5,6 +5,12 @@ const nav = document.querySelector(".nav"),
   navCloseBtn = document.querySelector(".navCloseBtn"),
   linksOpenBtn = document.querySelector("#open-icon"),
   userBox = document.querySelector(".user-box");
+  const weather=document.querySelector("#main-weather");
+  const navoffset=nav.offsetHeight;
+  const weatherPosition=weather.getBoundingClientRect().top;
+  const offsetPosition = weatherPosition + window.pageYOffset -  navoffset ;
+  const wLink=document.getElementById("w-link");
+
 
 
 //variables for profile page
@@ -49,6 +55,13 @@ linksOpenBtn.addEventListener("click", () => {
     userIconClick = 0;
     linksOpenBtn.classList.replace("fa-xmark", "fa-user");
   }
+});
+
+wLink.addEventListener("click", () => {
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth'
+});
 });
 
 //Profile picture

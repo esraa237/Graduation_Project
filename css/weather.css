@@ -8,6 +8,12 @@
     background: url("../images/weather.png") no-repeat center;
     background-size: cover;
     line-height: 3em;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    margin:0 40px;
 }
 /* Left weather section*/
 .start{

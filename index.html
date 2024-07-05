@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Āmin</title>
-    <link rel="shortcut icon" href="images/logo1.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
     <!--Main Css File-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main-style.css">
@@ -31,7 +31,7 @@
             <ul class="nav-links">
                 <i class="fa-solid fa-xmark navCloseBtn"></i>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#weather">Weather</a></li>
+                <li><a id="w-link" href="#weathe">Weather</a></li>
                 <li><a href="volunteering.html">Volunteering</a></li>
                 <li><a href="instruction.html" >Instructions</a></li>
                 <li><a href="adminUser.html" >Admin</a></li>
@@ -80,7 +80,7 @@
         <div class="primary-paragraph">
             <p><strong>Āmin is the first platform</strong> for predicting natural disasters and organizing civil defense missions.</p>
         </div> 
-        <div class="weather-content">
+        <div class="weather-content" id="main-weather">
             <!-- Left Weather Data-->
             <div class="start">
                 <p><span id="date">Date</span></p>
@@ -214,6 +214,9 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="primary-paragraph"><p>Emergency number |  19999</p></div>
+        <div class="primary-paragraph">
+            <p>Emergency number |  19999</p>
+            <p>All rights reserved.</p>
+        </div>
     </footer>
 </body>

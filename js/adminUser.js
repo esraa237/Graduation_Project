@@ -2,19 +2,7 @@
 // variables for adminUser
 let tableBtns=document.querySelectorAll(".tablesContainer .buttons .buttonContainer button");
 let tabPanels=document.querySelectorAll(".tablesContainer .tabPanel");
-let navoffset=document.getElementById("nav").offsetHeight;
-const element1=tableBtns[0].getBoundingClientRect().top;
-const offsetPosition1 = element1 + window.pageYOffset -  navoffset - 15;
-const element2=tableBtns[1].getBoundingClientRect().top;
-const offsetPosition2 = element2 + window.pageYOffset -  navoffset - 15;
-const element3=tableBtns[2].getBoundingClientRect().top;
-const offsetPosition3 = element3 + window.pageYOffset -  navoffset - 15;
-const element4=tableBtns[3].getBoundingClientRect().top;
-const offsetPosition4 = element4 + window.pageYOffset -  navoffset - 15;
-let btn1=document.getElementById("buton1");
-let btn2=document.getElementById("buton2");
-let btn3=document.getElementById("buton3");
-let btn4=document.getElementById("buton4");
+
 //adminUser page
 function showPanel(panelIndex){
     tableBtns.forEach(function(node){
@@ -30,7 +18,21 @@ function showPanel(panelIndex){
     });
     tabPanels[panelIndex].style.display="block";
   };
-  showPanel(1);
+  showPanel(0);
+
+  let navoffset=document.getElementById("nav").offsetHeight;
+const element1=tableBtns[0].getBoundingClientRect().top;
+const offsetPosition1 = element1 + window.pageYOffset -  navoffset - 15;
+const element2=tableBtns[1].getBoundingClientRect().top;
+const offsetPosition2 = element2 + window.pageYOffset -  navoffset - 15;
+const element3=tableBtns[2].getBoundingClientRect().top;
+const offsetPosition3 = element3 + window.pageYOffset -  navoffset - 15;
+const element4=tableBtns[3].getBoundingClientRect().top;
+const offsetPosition4 = element4 + window.pageYOffset -  navoffset - 15;
+let btn1=document.getElementById("buton1");
+let btn2=document.getElementById("buton2");
+let btn3=document.getElementById("buton3");
+let btn4=document.getElementById("buton4");
 
   btn1.addEventListener("click", () => {
     showPanel(0);

@@ -73,7 +73,7 @@
     -moz-border-radius: 15px !important;
     -ms-border-radius: 15px !important;
     -o-border-radius: 15px !important;
-    box-shadow:0 0 7px #067777;
+    box-shadow:0 0 3px #067777;
     margin-bottom: 25px;
 }
 .volunteering .btn:hover{
@@ -112,6 +112,5 @@ footer{
     font-weight: 400;
     color: var(--blue-color);
     padding: 2.4em 6em 1.8em;
-  
-  }
+    }
   /* End Volunteering */

@@ -68,7 +68,7 @@
   }
   .header{
     padding-top: 120px;
-    color: var(--white-color);
+    color: var(--white-bone-color);
     font-size: 56px;
     padding-bottom: 10px;
     text-align: center;
@@ -189,15 +189,13 @@
   font-weight: 500;
   color:var(--white-bone-color);
   text-align: left;
-  padding:10px;
+  padding:20px 10px;
   margin:0 10px;
   margin-bottom: 10px;
   background-color:#088a8a;
   text-align: center;
 }
-.flood-table th{
-  padding:20px 10px;
-}
+
 .flood-table tbody td:first-of-type,.flood-table th:first-of-type,
 .wind-table tbody td:first-of-type,.wind-table th:first-of-type{
   border-radius: 15px 0px 0px 15px;

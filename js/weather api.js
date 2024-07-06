@@ -17,7 +17,7 @@ async function weatherBalloon(lat, lon) {
 }
 // Calling the function with correct city coordinates
 window.onload = function() {
-    weatherBalloon(31.040949, 31.378469);
+    weatherBalloon(37.77493000, -122.41942000);
 }
 // Function to round up the temperatures
 // NOTE: Only works for small numbers
@@ -78,9 +78,10 @@ function drawWeather(json){
     // Populate the middle grid with their respective icons
     
     for (let index = 25; index <= 36; index++) {
-        document.getElementById(`${index}`).src = `../images/weather-icons/${json.list[(index-24)*3].weather[0].description}.svg`
+        document.getElementById(`${index}`).src = `images/weather-icons/${json.list[(index-24)*3].weather[0].description}.svg`
         document.getElementById(`${index}`).alt = `${json.list[(index-24)*3].weather[0].description}.png`
     }
-    document.getElementById('weather-icon').src = `../images/weather-icons/${json.list[0].weather[0].description}.svg`
+    document.getElementById('weather-icon').src = `images/weather-icons/${json.list[0].weather[0].description}.svg`
     document.getElementById('weather-icon').alt = `${json.list[0].weather[0].description}.png`
+
 }

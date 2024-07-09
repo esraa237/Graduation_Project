@@ -61,7 +61,7 @@ text-decoration: none;
     background: #f5f2eae3;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1);
-    box-shadow:0 0 15px #088b8b;
+    box-shadow:0 0 15px #088b8b83;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
@@ -149,9 +149,10 @@ text-decoration: none;
     color: var(--white-color);
     cursor: pointer;
     font-size: 18px;
+    box-shadow:0 0 2px #088b8b83;
   }
   .login-container .form .button:hover{
-    box-shadow:0 0 5px #0bd6d6f8;
+    box-shadow:0 0 7px #088b8b83;
   }
   .login-container  .form .button +div{
     display: flex;

@@ -19,15 +19,12 @@ signupCloseBtn.addEventListener(
   }
 );
 //functions for signup multi levels
-submitBtn.addEventListener("click", function () {
-  bullet[current - 1].classList.add("active1");
-  progressCheck[current - 1].classList.add("active1");
-  current += 1;
-  setTimeout(function () {
-    window.location.href="index.html";
-  }, 300);
+// submitBtn.addEventListener("click", function () {
+//   bullet[current - 1].classList.add("active1");
+//   progressCheck[current - 1].classList.add("active1");
+//   current += 1;
   
-});
+// });
 nextBtnFirst.addEventListener("click", function (event) {
   event.preventDefault();
   slidePage.style.marginLeft = "-35.9%";

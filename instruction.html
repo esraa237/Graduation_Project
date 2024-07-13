@@ -57,9 +57,15 @@
         </div>
         </div>        
     </nav>
-    <div class="Pmain-buttons">
-        <button type="button" class="safe-btn">SAFE</button>
-        <button type="button" class="emergency-btn">Emergency</button>
+    <div class="Pmain-buttons">  
+        <form action="" method="POST" class="safe-form">
+            <input type="hidden" name="state" value="safe"> 
+            <button type="submit" class="safe-btn">SAFE</button>
+        </form>
+        <form action="" method="POST" class="emergency-form">
+            <input type="hidden" name="state" value="emergency"> 
+            <button type="submit" class="emergency-btn">Emergency</button>
+        </form>
     </div>
     <main class="instruction">
         <section class="main-instruction">

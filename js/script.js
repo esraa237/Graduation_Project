@@ -5,10 +5,7 @@ const nav = document.querySelector(".nav"),
   navCloseBtn = document.querySelector(".navCloseBtn"),
   linksOpenBtn = document.querySelector("#open-icon"),
   userBox = document.querySelector(".user-box");
- 
-
-
-
+  
 //variables for profile page
 let profileImg = document.querySelector(".account-details .image-div img"),
   userFile = document.querySelector(".account-details .userfile");
